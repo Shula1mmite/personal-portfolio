@@ -1,0 +1,80 @@
+mat-toolbar {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+mat-toolbar .spacer {
+  flex: 1;
+}
+
+mat-toolbar button {
+  color: white;
+  font-size: 16px;
+  margin-left: 15px;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+mat-toolbar button:hover {
+  background-color: #f44336;
+  border-radius: 4px;
+}
+
+.menu-toggle-button {
+  display: block;
+}
+
+
+/* Toggle button styling */
+.menu-toggle-button {
+  display: block;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 8px 16px;
+}
+
+/* Hide menu toggle button on larger screens */
+@media (min-width: 768px) {
+  .menu-toggle-button {
+    display: none;
+  }
+
+  .spacer + div {
+    display: flex; /* Always display menu items */
+    gap: 10px; /* Add spacing between buttons */
+  }
+}
+
+/* On small screens, hide menu by default */
+@media (max-width: 768px) {
+  .spacer + div {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 50px; /* Adjust below toolbar */
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+
+  /* Show menu when the `show` class is applied */
+  .spacer + div.show {
+    display: flex;
+  }
+
+  /* Stack buttons vertically on small screens */
+  mat-toolbar button {
+    margin: 5px 0;
+  }
+}

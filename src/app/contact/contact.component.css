@@ -1,0 +1,55 @@
+.contact-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #1e1e2f;
+    color: white;
+    border-radius: 10px;
+    margin: 1.5rem auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  mat-form-field {
+    width: 100%; /* Full width for form fields */
+    margin-bottom: 16px; /* Spacing between fields */
+  }
+  
+  mat-label {
+    font-size: 1.2rem; /* Larger font size for labels */
+  }
+  
+  input, textarea {
+    font-size: 1rem; /* Ensures text inside inputs/textarea is readable */
+    padding: 12px; /* Add padding for better usability */
+  }
+  
+  button {
+    margin-top: 20px; /* Space above button */
+    width: 100%; /* Full width for the button */
+    font-size: 1rem; /* Button text size */
+    padding: 0.5rem 2rem;
+    align-self: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #4500a5;
+    transform: scale(1.05);
+  }
+  

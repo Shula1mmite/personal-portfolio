@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <button mat-button (click)="toggleMenu()" class="menu-toggle-button">
+    <span *ngIf="isMenuOpen">Close Menu</span>
+    <span *ngIf="!isMenuOpen">Open Menu</span>
+  </button>
+  <div class="spacer"></div>
+  <div [class.show]="isMenuOpen || !isMobile">
+      <button mat-raised-button color="accent" [routerLink]="['/']">Home</button>
+      <button mat-raised-button color="accent" [routerLink]="['/about-me']">About</button>
+      <button mat-raised-button color="accent" [routerLink]="['/projects']">Projects</button>
+      <button mat-raised-button color="accent" [routerLink]="['/contact']">Contact</button>
+    </div>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+  

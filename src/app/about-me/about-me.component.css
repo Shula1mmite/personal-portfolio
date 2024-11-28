@@ -1,0 +1,52 @@
+.about-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: transparent; /* No box */
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  .about-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3f51b5; /* Primary color */
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  .about-actions {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  
+  button.mat-raised-button {
+    background-color: #f44336; /* Accent color */
+    color: white;
+  }
+  
+  button.mat-raised-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  button.mat-stroked-button {
+    border: 2px solid #3f51b5;
+    color: #3f51b5;
+  }
+  
+  button.mat-stroked-button:hover {
+    background-color: #3f51b5;
+    color: white;
+  }
+  

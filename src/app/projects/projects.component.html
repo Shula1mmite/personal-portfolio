@@ -1,0 +1,17 @@
+<div class="projects-section">
+    <h2>Projects</h2>
+    <div *ngFor="let project of projects" class="project-card" @fadeIn>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{ project.title }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ project.description }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary">View Project</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+  
